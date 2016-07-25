@@ -11,7 +11,16 @@ class Resetsettings implements \BMO {
 		$this->db = $freepbx->Database;
 	}
 	public function install(){
+		\out(_('Resetting Settings'));
 		$this->callReset();
+		$nt = \notifications::create();
+		$rawname = 'resetsettings';
+		$uid = 'resethappened';
+		$display_text = _("Settings Reset");
+		$extended_text = _("The Reset settings module has reset some of your advanced settings. Please refresh your signatures in the CLI");
+		if(!$nt->exists($rawname, $uid)) {
+			$nt->add_notice($rawname, $uid, $display_text, $extended_text,'', true, true);
+		}
 	}
 	public function uninstall() {}
 	public function backup() {}
@@ -42,6 +51,7 @@ class Resetsettings implements \BMO {
 
 	public static function myDialplanHooks() { return true; }
 	public function doDialplanHook(&$ext, $engine, $priority) {
-		$this->callReset();
+		$mod = \module_functions::create();
+		$mod->uninstall('resetsettings', true);
 	}
 }

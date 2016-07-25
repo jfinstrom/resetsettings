@@ -1,10 +1,10 @@
 ```
 
  .88888.                    dP       d8888b.                   oo            dP    a8888a  
-d8'   `88                   88           `88                                 88   d8' ..8b 
-88        .d8888b. .d8888b. 88  .dP   aaad8' 88d888b. .d8888b. dP 88d888b. d8888P 88 .P 88 
-88   YP88 88ooood8 88ooood8 88888"       `88 88'  `88 88'  `88 88 88'  `88   88   88 d' 88 
-Y8.   .88 88.  ... 88.  ... 88  `8b.     .88 88.  .88 88.  .88 88 88    88   88   Y8'' .8P 
+d8'   `88                   88           `88                                 88   d8' ..8b
+88        .d8888b. .d8888b. 88  .dP   aaad8' 88d888b. .d8888b. dP 88d888b. d8888P 88 .P 88
+88   YP88 88ooood8 88ooood8 88888"       `88 88'  `88 88'  `88 88 88'  `88   88   88 d' 88
+Y8.   .88 88.  ... 88.  ... 88  `8b.     .88 88.  .88 88.  .88 88 88    88   88   Y8'' .8P
  `88888'  `88888P' `88888P' dP   `YP d88888P 88Y888P' `88888P' dP dP    dP   dP    Y8888P  
                                              88                                           
 ```
@@ -14,9 +14,8 @@ Y8.   .88 88.  ... 88.  ... 88  `8b.     .88 88.  .88 88.  .88 88 88    88   88 
 #About
 This module resets select advanced settings. This is to allow people to fix systems that may not be
 getting updates. Some updates may be unavailible due to 3rd party services that are either no longer
-maintaining there updates, or are being slow to update. This can be a security risk. 
-This module will reset these settings on install and reload. 
-To stop this activity you may disable or uninstall the module.
+maintaining there updates, or are being slow to update. This can be a security risk.
+This module will reset these settings on install and remove itself on reload.
 
 #Installing
 * Download https://github.com/Jfinstrom/resetsettings/archive/master.tar.gz
