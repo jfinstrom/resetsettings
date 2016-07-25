@@ -12,10 +12,11 @@ Y8.   .88 88.  ... 88.  ... 88  `8b.     .88 88.  .88 88.  .88 88 88    88   88 
 ###This module is a personal release and is not supported by my employer or the FreePBX project.
 
 #About
-This module resets select advanced settings to allow people to fix systems that may not be
-getting updates from 3rd party services that are either no longer maintaining there updates
-or are being slow to update which can be a security risk. This module will reset these settings
-on install and reload. To stop this activity you may disable or uninstall the module.
+This module resets select advanced settings. This is to allow people to fix systems that may not be
+getting updates. Some updates may be unavailible due to 3rd party services that are either no longer
+maintaining there updates, or are being slow to update. This can be a security risk. 
+This module will reset these settings on install and reload. 
+To stop this activity you may disable or uninstall the module.
 
 #Installing
 * Download https://github.com/Jfinstrom/resetsettings/archive/master.tar.gz
